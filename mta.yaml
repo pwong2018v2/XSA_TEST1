@@ -1,0 +1,19 @@
+ID: XSA_TEST1
+_schema-version: '2.0'
+version: 0.0.1
+
+modules:
+ - name: xsa_db
+   type: hdb
+   path: xsa_db
+   requires:
+    - name: hdi_xsa_db
+
+resources:
+ - name: hdi_xsa_db
+   parameters:
+      config:
+         schema: PSW_XSA_1
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
