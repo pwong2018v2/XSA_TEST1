@@ -1,19 +1,11 @@
 {
 	"role":{
-		"name": "XSA_TEST1.xsa_db.roles::external_access_g#",
-		   "schema_privileges": [ 
-		   {
-             "privileges_with_grant_option": [ 
-             "SELECT METADATA",
-		    			  "SELECT CDS METADATA",
-		    			  "SELECT",
-		    			  "INSERT",
-		    			  "EXECUTE",
-		    			  "DELETE",
-		    			  "UPDATE",
-		    			  "CREATE TEMPORARY TABLE",
-		    			  "TRIGGER"
-             ] } 
+		"name": "XSA_TEST1.xsa_db.roles::external_access",
+		   "object_privileges": [ 
+		   { "name": "XSA_TEST1.xsa_db.data::PurchaseOrder.Item",
+              "type": "TABLE",
+              "privileges": [ "SELECT" ] 
+                  }
 		     ]
       }
 }
