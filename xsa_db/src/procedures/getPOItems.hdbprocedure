@@ -1,0 +1,16 @@
+PROCEDURE "XSA_TEST1.xsa_db.procedures::getPOItems" ( )
+   LANGUAGE SQLSCRIPT
+   SQL SECURITY INVOKER
+   --DEFAULT SCHEMA <default_schema_name>
+   READS SQL DATA AS
+BEGIN
+   /*************************************
+       Write your procedure logic 
+   *************************************/
+
+     	   ex_addresses =
+  	     select *
+  	              from "XSA_TEST1.xsa_db.data::PurchaseOrder.Item";
+  	              
+
+END
