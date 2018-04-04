@@ -1,6 +1,6 @@
 {
 	"role":{
-		"name": "XSA_TEST1.xsa_db.roles::external_access_g#",
+		"name": "XSA_TEST1.xsa_db.roles::external_access",
 		   "object_privileges": [ 
 		   { "name": "XSA_TEST1.xsa_db.data::PurchaseOrder.Item",
               "type": "TABLE",
