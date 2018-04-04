@@ -4,7 +4,7 @@
 		   "object_privileges": [ 
 		   { "name": "XSA_TEST1.xsa_db.data::PurchaseOrder.Item",
               "type": "TABLE",
-              "privileges": [ "SELECT" ] 
+              "privileges_with_grant_option": [ "SELECT" ] 
                   }
 		     ]
       }
