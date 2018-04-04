@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Privilege:analyticPrivilege xmlns:Privilege="http://www.sap.com/ndb/BiModelPrivilege.ecore" id="XSA_TEST1.xsa_db::PO_DOC_A" privilegeType="SQL_ANALYTIC_PRIVILEGE" schemaVersion="1.1">
+<descriptions defaultDescription="PO_DOC_Analytics"/>
+<securedModels>
+  <modelUri>XSA_TEST1.xsa_db::PO_Doc</modelUri>
+</securedModels>
+
+<whereSql>&quot;PRODUCT&quot; LIKE 'HT</whereSql>
+</Privilege:analyticPrivilege>
