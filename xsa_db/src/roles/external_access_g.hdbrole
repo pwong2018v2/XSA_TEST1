@@ -1,9 +1,9 @@
 {
 	"role":{
-		"name": "XSA_TEST1.xsa_db.roles::external_access_g#",
+		"name": "XSA_TEST1.xsa_db.roles::external_access",
 		   "schema_privileges": [ 
 		   {
-             "privileges_with_grant_option": [ 
+             "privileges": [ 
              "SELECT METADATA",
 		    			  "SELECT CDS METADATA",
 		    			  "SELECT",
