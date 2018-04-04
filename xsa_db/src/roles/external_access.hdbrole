@@ -1,0 +1,9 @@
+{
+	"role":{
+		"name": "XSA_TEST1.xsa_db.roles::external_access",
+		   "schema_privileges": [ 
+		   {
+             "privileges": [ "SELECT" ] } 
+		     ]
+      }
+}
