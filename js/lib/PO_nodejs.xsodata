@@ -1,6 +1,6 @@
 service {
  "XSA_TEST1.xsa_db.data::PurchaseOrder.Header" as "header";
  "XSA_TEST1.xsa_db.data::PurchaseOrder.Item" as "item";
- association "header" principal "header"("PURCHASEORDERID") multiplicity "1"
+  association "header" principal "header"("PURCHASEORDERID") multiplicity "1"
  dependent "item"("PURCHASEORDERID") multiplicity "*";
 }
