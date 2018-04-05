@@ -9,6 +9,16 @@ modules:
    requires:
     - name: hdi_xsa_db
 
+ - name: js
+   type: nodejs
+   path: js
+   requires:
+    - name: hdi_xsa_db
+   provides:
+    - name: js_api
+      properties:
+         url: ${default-url}
+
 resources:
  - name: hdi_xsa_db
    parameters:
