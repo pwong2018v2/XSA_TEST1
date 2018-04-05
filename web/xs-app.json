@@ -1,0 +1,13 @@
+{
+	"welcomeFile": "webapp/index.html",
+	"authenticationMethod": "none",
+	"routes": [{
+		"source": "/PO_nodejs(.*)",
+		"destination": "js_be"
+		}, {
+		"source": "^/(.*)$",
+		"localDir": "resources"
+
+		}
+		]
+}
