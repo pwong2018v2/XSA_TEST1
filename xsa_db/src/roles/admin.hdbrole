@@ -15,7 +15,8 @@
 		}],
 		"schema_analytic_privileges": [
             {
-                "privileges":[ "XSA_TEST1.xsa_db.roles::PO_VIEW_PRIVILEGE" ]
+                "privileges":[ "XSA_TEST1.xsa_db.roles::PO_VIEW_PRIVILEGE",
+                "XSA_TEST1.xsa_db::PO_DOC_A" ]
             }
         ]
 

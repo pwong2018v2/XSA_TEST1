@@ -5,5 +5,5 @@
   <modelUri>XSA_TEST1.xsa_db::PO_Doc</modelUri>
 </securedModels>
 
-<whereSql>&quot;PRODUCT&quot; LIKE 'HT</whereSql>
+<whereSql>&quot;PRODUCT&quot; LIKE 'HT-6%'</whereSql>
 </Privilege:analyticPrivilege>
