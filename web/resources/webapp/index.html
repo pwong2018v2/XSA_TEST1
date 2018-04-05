@@ -26,14 +26,14 @@
 //					})
 //				}).placeAt("content");
 //			});
-var oModel = new sap.ui.odata.ODatamodel("/PO_nodejs.xsodata, true");
-var oTable = new sap.ui.table.Table({ title: "Purchase Orders", visibleRowCount: 5, id: "POs"});
-oTable.addColumn(new sap.ui.table.Column({ label: "PO ID", template: "PURCHASEORDERID" }));
-oTable.addColumn(new sap.ui.table.Column({ label: "PRODUCT", template: "PRODUCT" }));
+			var oModel = new sap.ui.odata.ODatamodel("/PO_nodejs.xsodata, true");
+			var oTable = new sap.ui.table.Table({ title: "Purchase Orders", visibleRowCount: 5, id: "POs"});
+			oTable.addColumn(new sap.ui.table.Column({ label: "PO ID", template: "PURCHASEORDERID" }));
+			oTable.addColumn(new sap.ui.table.Column({ label: "PRODUCT", template: "PRODUCT" }));
 
-oTable.setModel(oModel);
-oTable.bindRows("/PO_nodejs");
-oTable.placeAt("content");
+			oTable.setModel(oModel);
+			oTable.bindRows("/PO_nodejs");
+			oTable.placeAt("content");
 		</script>
 	</head>
 
