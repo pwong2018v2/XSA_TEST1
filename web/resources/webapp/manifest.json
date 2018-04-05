@@ -49,6 +49,7 @@
 				"sap.ui.core": {},
 				"sap.m": {},
 				"sap.ui.layout": {},
+				"sap.ui.table": {},				
 				"sap.ushell": {},
 				"sap.collaboration": {},
 				"sap.ui.comp": {},

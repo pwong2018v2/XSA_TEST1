@@ -28,7 +28,7 @@ modules:
       group: destinations
       properties:
          name: js_be
-         url: ${url}
+         url: ~{url}
     
 resources:
  - name: hdi_xsa_db
