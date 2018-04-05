@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta charset="UTF-8">
 
-		<title>web</title>
+		<title>Trying out XSODATA for PSW</title>
 
 		<script id="sap-ui-bootstrap"
 			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
@@ -18,14 +18,22 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 		<script>
-			sap.ui.getCore().attachInit(function() {
-				new sap.m.Shell({
-					app: new sap.ui.core.ComponentContainer({
-						height : "100%",
-						name : "web"
-					})
-				}).placeAt("content");
-			});
+//			sap.ui.getCore().attachInit(function() {
+//				new sap.m.Shell({
+//					app: new sap.ui.core.ComponentContainer({
+//						height : "100%",
+//						name : "web"
+//					})
+//				}).placeAt("content");
+//			});
+var oModel = new sap.ui.odata.ODatamodel("/PO_nodejs.xsodata, true");
+var oTable = new sap.ui.table.Table({ title: "Purchase Orders", visibleRowCount: 5, id: "POs"});
+oTable.addColumn(new sap.ui.table.Column({ label: "PO ID", template: "PURCHASEORDERID" }));
+oTable.addColumn(new sap.ui.table.Column({ label: "PRODUCT", template: "PRODUCT" }));
+
+oTable.setModel(oModel);
+oTable.bindRows("/PO_nodejs");
+oTable.placeAt("content");
 		</script>
 	</head>
 
