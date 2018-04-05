@@ -9,7 +9,7 @@
 
 		<script id="sap-ui-bootstrap"
 			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-			data-sap-ui-libs="sap.m"
+			data-sap-ui-libs="sap.m, sap.ui.table"
 			data-sap-ui-theme="sap_bluecrystal"
 			data-sap-ui-compatVersion="edge"
 			data-sap-ui-resourceroots='{"web": ""}'>
@@ -29,7 +29,7 @@
 			var oModel = new sap.ui.model.odata.ODataModel("/PO_nodejs.xsodata", true);
 			var oTable = new sap.ui.table.Table({ title: "Purchase Orders", visibleRowCount: 5, id: "POs" });
 			oTable.addColumn(new sap.ui.table.Column({ label: "PO ID", template: "PURCHASEORDERID" }));
-//			oTable.addColumn(new sap.ui.table.Column({ label: "PRODUCT", template: "PRODUCT" }));
+			oTable.addColumn(new sap.ui.table.Column({ label: "PRODUCT", template: "PRODUCT" }));
 
 			oTable.setModel(oModel);
 			oTable.bindRows("/PO_nodejs");
